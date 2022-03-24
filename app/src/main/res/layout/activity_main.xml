@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter Person Information"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:hint="ID"
+        app:boxStrokeColor="@color/orange"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputLayout8"
+        android:hint="First Name"
+        app:boxStrokeColor="@color/orange"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputLayout1"
+        android:hint="Last Name"
+        app:boxStrokeColor="@color/orange"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputLayout2"
+        android:hint="Address"
+        app:boxStrokeColor="@color/orange"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputLayout3"
+        android:hint="Phone Number"
+        app:boxStrokeColor="@color/orange"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036"
+        app:prefixText="+63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputLayout4"
+        android:hint="Password"
+        app:boxStrokeColor="@color/orange"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/orange"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btninsert"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/InputLayout5"
+        android:text="Insert"
+        app:cornerRadius="100dp"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnupdate"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/InputLayout5"
+        android:layout_toRightOf="@+id/btninsert"
+        android:text="Update"
+        app:cornerRadius="100dp"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btndelete"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/btnupdate"
+        android:text="Delete"
+        app:cornerRadius="100dp"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnView"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/btnupdate"
+        android:layout_toRightOf="@id/btndelete"
+        android:text="View"
+        app:cornerRadius="100dp"
+        app:iconGravity="textStart" />
+
+
+
+</RelativeLayout>
